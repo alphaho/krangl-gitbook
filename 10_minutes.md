@@ -31,10 +31,10 @@ To save a data frame simply use
 irisData.writeCSV(File("my_iris.txt"))
 ```
 
-To load a data-frame simply **{done}**
+To load a data-frame simply do
 
 ```kotlin
-irisData.writeCSV(File("my_iris.txt"))
+DataFrame.readCSV(File("my_iris.txt"))
 ```
 
 It allows to Read from tsv, csv, json, jdbc, e.g.
