@@ -64,7 +64,7 @@ It implements a  `pandas`/`tidyverse` like API to create, manipulate, reshape, c
 ```kotlin
 // aggregations like
 dataFrame.groupBy("age").count()
-dataFrame.summarize("mean_salary"){ mean(it["salaray"])}
+dataFrame.summarize("mean_salary"){ it["salaray"].mean() }
 
 // integration like
 val df: DataFrame = dataFrame.leftJoin(otherDF)
